@@ -4,6 +4,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+
 public class NotesSteps {
     private Memory memory;
     private Note note;
@@ -21,7 +24,7 @@ public class NotesSteps {
 
     @Then("should she be able to see the note")
     public void should_she_be_able_to_see_the_note() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        Note actual = memory.getSavedNote();
+        assertThat(actual, is(note));
     }
 }
