@@ -7,8 +7,8 @@ import cucumber.api.java.en.When;
 public class NotesSteps {
     @Given("she must remember to book Nalen")
     public void she_must_remember_to_book_Nalen() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        Memory memory = new Memory();
+        Note note = new Note("Remember to book Nalen");
     }
 
     @When("she writes the note")
