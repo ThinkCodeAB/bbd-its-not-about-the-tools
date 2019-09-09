@@ -2,6 +2,16 @@
 
 The example used in the presentation "Behaviour-Driven Development – it’s not the tools"
 
+## Clone the project
+
+Clone the project to your local computer. There is button called "Clone or download" on 
+the GitHub page you are looking at, click on it and follow the instructions.
+
+I would do `git@github.com:ThinkCodeAB/bdd-its-not-about-the-tools.git` from a command line 
+and then go into the directory `bdd-its-not-about-the-tools´ with 
+
+    cd bdd-its-not-about-the-tools 
+
 ## Building
 
 Maven is used for building
